@@ -863,7 +863,7 @@ pre code {
 	background-size: contain;
 	background-position: center;
    	height:400px;
-   	border: 1px solid #999999;
+   	border-top: 1px solid #999999;
    	margin-top:1%;
 }
 
@@ -920,13 +920,17 @@ pre code {
 
 #Process, #About{
 	height:300px;
-   	border: 1px solid #999999;
+   	border-top: 1px solid #999999;
    	margin-top:1%;
+}
+
+#About{
+    border-left:1px solid #999999;
 }
 
 #Twitter, #Instagram, #LinkedIn{
    	height:200px;
-   	border: 1px solid #999999;
+   	border-top: 1px solid #999999;
    	margin-top:1%;
    	margin-bottom:1%;
 }
@@ -936,7 +940,7 @@ pre code {
 	background-repeat:no-repeat;
 	background-size: contain;
 	background-position: center;
-	margin-right:1%;
+	
 }
 
 #About{
@@ -948,17 +952,16 @@ pre code {
 
 #Twitter{
 	background-image: url('../images/twitter64.png');
-
 	background-repeat:no-repeat;
 	background-position: center;
-	margin-right:1%;
+    border-right: 1px solid #999999;
 }
 
 #Instagram{
 	background-image: url('../images/instagram64.png');
 	background-repeat:no-repeat;
 	background-position: center;
-	margin-right:1%;
+    border-right: 1px solid #999999;
 }
 
 #LinkedIn{
@@ -979,7 +982,7 @@ a.Socialclick{
 
 #skillsRow{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     height:auto;
 }
 
@@ -1008,7 +1011,7 @@ a.Socialclick{
 
 #prof_photo{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     height:408px;
 }
 
@@ -1025,20 +1028,26 @@ a.Socialclick{
 
 #fun_photo{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     height:400px;
 }
 
-
-#prof_text, #skills, #fun_text{
+#prof_text{
+    border-left: 1px solid #999999;
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
+    height:auto;
+    min-height:400px;
+}
+
+#skills, #fun_text{
+    margin-top:1%;
+    border-top: 1px solid #999999;
     height:auto;
     min-height:400px;
 }
 
 #prof_photo{
-    margin-right:1%;
     background-image:url('../images/Surdykowski_J-lookup.jpg');
     background-repeat:no-repeat;
     background-size: cover;
@@ -1048,7 +1057,6 @@ a.Socialclick{
 
 #skills_research, #skills_design, #skills_dev{
     margin-top:1%;
-    margin-right:1%;
     height:auto;
     min-height:400px;
 }
@@ -1059,20 +1067,8 @@ a.Socialclick{
     min-height:400px;
 }
 
-@media(max-width:992px) {
-    #skillsRow{
-        border:none;
-    }
-
-    #skills_research, #skills_design, #skills_dev, #skills_clientman{
-    border: 1px solid #999999;
-    text-align:center;}
-}
-
-
 #fun_text{
     margin-bottom:1%;
-    margin-right:1%;
 }
 
 #fun_photo{
@@ -1081,7 +1077,30 @@ a.Socialclick{
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
+    border-left: 1px solid #999999;
 }
+
+@media(max-width:992px) {
+    #skillsRow{
+        border:none;
+    }
+
+    #skills_research, #skills_design, #skills_dev, #skills_clientman{
+    border-top: 1px solid #999999;
+    text-align:center;}
+
+    #prof_text{
+        border-left:none;
+    }
+    
+    #fun_photo{
+        border-left:none;
+
+    }
+}
+
+
+
 
 
 /*_______________________________End About Page Styling________________________________________*/
@@ -1095,33 +1114,33 @@ a.Socialclick{
 
 #process1research_text{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
     min-height:315px;
     height:auto;
 }
 
  #process2wireframe_text, #process3prototype_text, #process4design_text{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     min-height:300px;
     height:auto;
 }
 
+#process3prototype_text{
+    border-left: 1px solid #999999;
+}
 
 #process1research_photo{
     margin-top:1%;
-    margin-right:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     min-height:315px;
     height:auto;
 }
 
-
-
 #process2wireframe_photo, #process4design_photo{
     margin-top:1%;
-    margin-left:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     min-height:300px;
     height:auto;
 }
@@ -1139,7 +1158,7 @@ a.Socialclick{
     background-repeat:no-repeat;
     background-position:center;
     margin-top:1%;
-
+    border-left: 1px solid #999999;
 }
 
 #process3prototype_photo{
@@ -1148,8 +1167,7 @@ a.Socialclick{
     background-repeat:no-repeat;
     background-position:center;
     margin-top:1%;
-    margin-right:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     min-height:300px;
     height:auto;
 
@@ -1161,6 +1179,7 @@ a.Socialclick{
     background-repeat:no-repeat;
     background-position:center;
     margin-bottom:1%;
+    border-left: 1px solid #999999;
 
 }
 
@@ -1179,30 +1198,40 @@ a.Socialclick{
 
   }
 
-
-
+@media(max-width:992px) {
+    #process1research_text{
+        border-left:none;
+    }
+    
+    #process2wireframe_photo{
+        border-left:none;
+    }
+    
+     #process3prototype_text{
+        border-left:none;
+    }
+     #process4design_photo{
+        border-left:none;
+    }
+}
 
 /*_______________________________End Process Page Styling________________________________________*/
 
 /*_______________________________WorkMain Page Styling________________________________________*/
 
- #Crystal, #CommuteMe, #TutoringPlus, #Craigslist, #SaltOlive, #Pandora{
+ #Crystal_onboard, #Crystal_visual, #CommuteMe, #TutoringPlus, #Craigslist, #SaltOlive, #Pandora, #TipTap, #Other{
     margin-top:1%;
-    border: 1px solid #999999;
+    border-top: 1px solid #999999;
     min-height:300px;
     height:300px;
     display:block;
 }
 
-#CommuteMe, #Craigslist, #Pandora{
-    margin-left:1%;
-}
-
-#SaltOlive, #Pandora{
+#Other{
     margin-bottom:1%;
 }
 
-#Crystal:hover #overlay, #CommuteMe:hover #overlay, #TutoringPlus:hover #overlay, #Craigslist:hover #overlay, #SaltOlive:hover #overlay, #Pandora:hover #overlay{
+#Crystal_onboard:hover #overlay, #Crystal_visual:hover #overlay, #CommuteMe:hover #overlay, #TutoringPlus:hover #overlay, #Craigslist:hover #overlay, #SaltOlive:hover #overlay, #Pandora:hover #overlay, #TipTap:hover #overlay, #Other:hover #overlay{
     opacity:0.85;
     background: #000000;
     height:100%;
@@ -1211,7 +1240,7 @@ a.Socialclick{
     background-position: center;
 }
 
-#Crystal:hover #text, #CommuteMe:hover #text, #TutoringPlus:hover #text, #Craigslist:hover #text, #SaltOlive:hover #text, #Pandora:hover #text { 
+#Crystal_onboard:hover #text, #Crystal_visual:hover #text, #CommuteMe:hover #text, #TutoringPlus:hover #text, #Craigslist:hover #text, #SaltOlive:hover #text, #Pandora:hover #text, #TipTap:hover #text, #Other:hover #text{ 
     display: block;
     text-align: center;
     font-family:inherit;
@@ -1221,8 +1250,362 @@ a.Socialclick{
     margin-top:5%;
 }
 
+#Crystal_onboard{
+    background-image: url('../images/meeting.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 
+}
+
+#Crystal_onboard p, #Crystal_visual p, #CommuteMe p, #TutoringPlus p, #Craigslist p, #SaltOlive p, #Pandora p, #TipTap p, #Other p{
+    color:#09bbb4;
+    text-align:center;
+    margin-top:5%;
+    font-size:28px;
+    font-family:inherit;
+    font-weight:300;
+    background-color:rgba(255,255,255,0.9);
+
+}
+
+#Crystal_onboard:hover p, #Crystal_visual:hover p, #CommuteMe:hover p, #TutoringPlus:hover p, #Craigslist:hover p, #SaltOlive:hover p, #Pandora:hover p, #TipTap:hover p, #Other:hover p{ 
+    display: none;
+}
+
+
+#Crystal_visual{
+    background-image: url('../images/uikit.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid #999999;
+}
+
+#CommuteMe{
+    background-image: url('../images/commute.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#TutoringPlus{
+    background-image: url('../images/tutoring.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid #999999;
+    
+}
+
+#Craigslist{
+    background-image: url('../images/moving.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#SaltOlive{
+    background-image: url('../images/saltandolive.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid #999999;
+   
+}
+
+#Pandora{
+    background-image: url('../images/music.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#TipTap{
+    background-image: url('../images/tiptaproom.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 1px solid #999999;
+    
+}
+
+#Other{
+    background-image: url('../images/ux.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+@media(max-width:992px) {
+    #Crystal_visual{
+        border-left:none;
+    }
+    
+    #TutoringPlus{
+        border-left:none;
+    }
+    
+     #SaltOlive{
+        border-left:none;
+    }
+     #TipTap{
+        border-left:none;
+    }
+}
 /*_______________________________End WorkMainPage Styling________________________________________*/
+
+/*_______________________________Specific Work Pages_Styling________________________________________*/
+#header_photo{    
+    display:block;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top:1%;
+    border-top: 1px solid #999999;
+    min-height:300px;
+    height:300px;
+}
+
+#header_photo h1{
+    color:#09bbb4;
+    text-align:center;
+    margin-top:5%;
+    font-size:34px;
+    font-family:inherit;
+    font-weight:300;
+    background-color:rgba(255,255,255,0.9);
+}
+
+ #Text1, #Image1, #Text2, #Image2, #Text3, #Image3{
+    margin-top:1%;
+    border-top: 1px solid #999999;
+    min-height:350px;
+    height:300px;
+}
+
+#Text1, #Text2, #Text3{
+    height:auto;
+}
+
+#Image1, #Image2, #Image3{
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#Image1, #Text2, #Image3{
+    border-left:1px solid #999999;
+}
+
+#Text3, #Image3{
+    margin-bottom:1%;
+}
+
+/*_______________________________End of Specific Work Pages_Styling________________________________________*/
+
+/*_______________________________CrystalOnboarding Styling________________________________________*/
+
+
+.CrystalOnboarding_header{
+    background-image: url('../images/meeting.png');
+}
+
+.CrystalOnboarding_AboutImage{
+    background-image: url('../images/CrystalHook.png');
+}
+
+.CrystalOnboarding_FlowImage{
+    background-image: url('../images/crystalflow.png'); 
+}
+
+.CrystalOnboarding_WireframeImage{
+    background-image: url('../images/crystalwireframes.png');
+}
+
+/*________________________________Crystal Visual Styling_______________________________________________*/
+.CrystalVisual_header{
+    background-image: url('../images/uikit.png');
+}
+
+.CrystalVisual_AboutImage{
+    background-image: url('../images/CrystalSystem.png');
+
+}
+
+.CrystalVisual_ColorImage{
+    background-image: url('../images/System_ColorStates.png'); 
+
+}
+
+.CrystalVisual_TypeImage{
+    background-image: url('../images/System_TypeGrid.png');
+
+}
+
+/*_______________________________CommuteMe Styling________________________________________*/
+
+.CommuteMe_header{
+    background-image: url('../images/commute.png');
+}
+
+.CommuteMe_AboutImage{
+    background-image: url('../images/CommuteMe_Research.png');
+
+}
+
+.CommuteMe_SprintImage{
+    background-image: url('../images/CommuteMeprocesscircle.png'); 
+
+}
+
+.CommuteMe_WireframeImage{
+    background-image: url('../images/CommuteMe_Wireframes.png');
+}
+
+/*_______________________________TutoringPlus Styling________________________________________*/
+
+.TutoringPlus_header{
+    background-image: url('../images/tutoring.png');
+}
+
+.TutoringPlus_AboutImage{
+    background-image: url('../images/TP_featureimage.png');
+
+}
+
+.TutoringPlus_UXImage{
+    background-image: url('../images/TutoringPlus_UXscreen.png'); 
+
+}
+
+.TutoringPlus_VisualDesignImage{
+    background-image: url('../images/TP_ipad.png');
+
+}
+
+/*_______________________________Craigslist Styling________________________________________*/
+
+.Craigslist_header{
+    background-image: url('../images/moving.png');
+}
+
+.Craigslist_Image1{
+    background-image: url('../images/CLfeatured-image.png');
+
+}
+
+.Craigslist_Image2{
+    background-image: url('../images/Craigslist_IA.png');
+    background-size:cover;
+
+}
+
+.Craigslist_Image3{
+    background-image: url('../images/CLwireframes.png');
+
+}
+
+/*_______________________________Salt&Olive Styling________________________________________*/
+
+.SaltOlive_header{
+    background-image: url('../images/saltandolive.png');
+}
+
+.SaltOlive_Image1{
+    background-image: url('../images/saltandolive_devices.png');
+
+}
+
+.SaltOlive_Image2{
+    background-image: url('../images/SaltOlive_logo.jpg');
+    background-size:cover;
+
+}
+
+.SaltOlive_Image3{
+    background-image: url('../images/SaltOlive_bottles.png');
+    background-size:cover;
+
+}
+
+/*_______________________________Pandora Styling________________________________________*/
+
+.Pandora_header{
+    background-image: url('../images/music.png');
+}
+
+.Pandora_Image1{
+    background-image: url('../images/Pandora_bannerads_inmac.png');
+
+}
+
+.Pandora_Image2{
+    background-image: url('../images/Pandora_heroad_indesktop.png');
+    margin-bottom:1%;
+}
+
+.Pandora_Text3{
+    margin-bottom:1%;
+}
+
+/*_______________________________TipTap Styling________________________________________*/
+
+.TipTap_header{
+    background-image: url('../images/tiptaproom.png');
+}
+
+.TipTap_Image1{
+    background-image: url('../images/TipTapHomepage_laptop.png');
+
+}
+
+.TipTap_Image2{
+    background-image: url('../images/tiptap_menus.png');
+
+}
+
+.TipTap_Image3{
+    background-image: url('../images/TipTapAbout_laptop.png');
+}
+
+/*_______________________________RecentWork Styling________________________________________*/
+
+.RecentWork_header{
+    background-image: url('../images/ux.png');
+}
+
+.RecentWork_Image1{
+    background-image: url('../images/TipTapHomepage_laptop.png');
+
+}
+
+.RecentWork_Image2{
+    background-image: url('../images/tiptap_menus.png');
+
+}
+
+.RecentWork_Image3{
+    background-image: url('../images/TipTapAbout_laptop.png');
+}
+
+/*_______________________________Work Pages Media Queries________________________________________*/
+
+@media(max-width:992px) {   
+    #Image1{
+        border-left:none;
+    }
+    
+    #Text2{
+        border-left:none;
+    }
+     #Image3{
+        border-left:none;
+    }
+}
 
 /*_________________________________Bootstrap Column Widths_______________________________________*/
 
@@ -1233,7 +1616,7 @@ a.Socialclick{
     }
 
     .col-xs-3{
-        width:24%;
+        width:25%;
     }
 
     .col-xs-pull-3{
@@ -1241,7 +1624,7 @@ a.Socialclick{
     }
 
     .col-xs-push-3{
-        left: 24%;
+        left: 25%;
     }
 
     .col-xs-4 {
@@ -1261,15 +1644,15 @@ a.Socialclick{
     }
 
     .col-xs-6 {
-        width: 49%;
+        width: 50%;
     }
 
     .col-xs-pull-6{
-        right:49%;
+        right:50%;
     }
 
     .col-xs-push-6 {
-        left: 49%;
+        left: 50%;
     }
 
     .col-xs-offset-6 {
@@ -1277,19 +1660,19 @@ a.Socialclick{
     }
 
     .col-xs-8{
-        width: 65%;
+        width: 66.6666%;
     }
 
     .col-xs-pull-8{
-        right:65%;
+        right:66.6666%;
     }
 
     .col-xs-push-8{
-        left:65%;
+        left:66.6666%;
     }
 
     .com-xs-offset-8{
-        margin-left: 65%;
+        margin-left: 66.6666%;
     }
 
     .col-xs-9{
@@ -1337,19 +1720,19 @@ a.Socialclick{
     }
 
     .col-sm-8{
-    	width:66.3%;
+    	width:66.6666%;
     }
 
     .col-sm-6 {
-        width: 49%;
+        width: 50%;
     }
 
     .col-sm-4 {
-        width: 32.6666667%;
+        width: 33.3333%;
     }
 
     .com-sm-3{
-        width:24%;
+        width:25%;
 
     }
 
@@ -1362,7 +1745,7 @@ a.Socialclick{
     }
 
     .col-sm-pull-8{
-    	right:66.3%;
+    	right:66.6666%;
     }
 
     .col-sm-pull-6 {
@@ -1370,11 +1753,11 @@ a.Socialclick{
     }
 
     .col-sm-pull-4{
-        right:32.6666667%;
+        right:33.3333%;
     }
 
     .col-sm-pull-3{
-        right:24%;
+        right:25%;
     }
 
     .col-sm-push-12 {
@@ -1386,7 +1769,7 @@ a.Socialclick{
     }
 
     .col-sm-push-8{
-    	left:66.3%;
+    	left:66.6666%;
     }
 
     .col-sm-push-6 {
@@ -1398,7 +1781,7 @@ a.Socialclick{
 	}
 
     .col-sm-push-3{
-        left:24%;
+        left:25%;
     }
 
     .col-sm-offset-12 {
@@ -1409,7 +1792,7 @@ a.Socialclick{
     }
 
     .col-sm-offset-8{
-    	margin-left:66.3%;
+    	margin-left:66.6666%;
     }
 
     .col-sm-offset-6 {
@@ -1421,7 +1804,7 @@ a.Socialclick{
     }
 
     .col-sm-offset-3{
-        margin-left:24%;
+        margin-left:25%;
     }
 
 }
@@ -1441,20 +1824,20 @@ a.Socialclick{
     }
 
 	.col-md-8{
-		width:66.3%;
+		width:66.6666%;
 	}
 
     .col-md-6 {
-        width: 49%;
+        width: 50%;
 
     }
 
     .col-md-4 {
-        width: 32.667%;
+        width: 33.3333%;
     }
 
     .col-md-3{
-        width:24%;
+        width:25%;
     }
 
     .col-md-pull-12 {
@@ -1466,7 +1849,7 @@ a.Socialclick{
     }
 
     .col-md-pull-8{
-    	right:66.3%;
+    	right:66.6666%;
     }
 
     .col-md-pull-6 {
@@ -1478,18 +1861,18 @@ a.Socialclick{
     }
 
     .col-md-pull-3{
-        right:24%;
+        right:25%;
     }
 
     .col-md-push-12 {
         left: 100%;
     }
     .col-md-push-9{
-        left:74%;
+        left:75%;
     }
 
     .col-md-push-8{
-    	left:66.3%;
+    	left:66.6666%;
     }
 
     .col-md-push-6 {
@@ -1497,11 +1880,11 @@ a.Socialclick{
     }
 
     .col-md-push-4{
-        left: 32.667%;
+        left: 33.3333%;
     }
 
     .col-md-push-3{
-        left:24%;
+        left:25%;
     }
 
     .col-md-offset-12 {
@@ -1509,11 +1892,11 @@ a.Socialclick{
     }
 
     .col-md-offset-9{
-        margin-left: 74%;
+        margin-left: 75%;
     }
 
     .col-md-offset-8{
-    	margin-left:66.3%;
+    	margin-left:66.6666%;
     }
 
     .col-md-offset-6 {
@@ -1525,7 +1908,7 @@ a.Socialclick{
     }
 
     .col-md-offset-3{
-        margin-left: 24%;
+        margin-left: 25%;
     }
 
 }
@@ -1545,19 +1928,19 @@ a.Socialclick{
     }
 
     .col-lg-8{
-    	width:66.3%;
+    	width:66.6666%;
     }
 
     .col-lg-6 {
-        width: 49.5%;
+        width: 50%;
     }
 
     .col-lg-4 {
-        width: 32.667%;
+        width: 33.3333%;
     }
 
     .col-lg-3{
-        width:24%;
+        width:25%;
     }
 
     .col-lg-pull-12 {
@@ -1565,11 +1948,11 @@ a.Socialclick{
     }
 
     .col-lg-pull-9{
-        right:74%;
+        right:75%;
     }
 
     .col-lg-pull-8{
-    	right:66.3%;
+    	right:66.6666%;
     }
 
     .col-lg-pull-6 {
@@ -1581,7 +1964,7 @@ a.Socialclick{
     }
 
     .col-lg-pull-3{
-        right:24%;
+        right:25%;
     }
 
     .col-lg-push-12 {
@@ -1589,11 +1972,11 @@ a.Socialclick{
     }
 
     .col-lg-push-9{
-        left:74%;
+        left:75%;
     }
 
     .col-lg-push-8{
-    	left:66.3%;
+    	left:66.6666%;
     }
 
     .col-lg-push-6 {
@@ -1605,7 +1988,7 @@ a.Socialclick{
     }
 
     .col-lg-push-3{
-        left:24%;
+        left:25%;
     }
 
     .col-lg-offset-12 {
@@ -1613,11 +1996,11 @@ a.Socialclick{
     }
 
     .col-lg-offset-9{
-        margin-left:74%;
+        margin-left:75%;
     }
 
     .col-lg-offset-8{
-    	margin-left:66.3%;
+    	margin-left:66.666%;
     }
 
     .col-lg-offset-6 {
@@ -1629,7 +2012,7 @@ a.Socialclick{
     }
 
     .col-lg-offset-3{
-        margin-left:24%;
+        margin-left:25%;
     }
 
 }
